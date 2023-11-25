@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Raleway:wght@200&display=swap');/*REPLACE WITH AT LEAST 2 OTHER GOOGLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&family=Yeseva+One&display=swap');
+/* font "bank"
+
+font-family: 'Audiowide', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Yeseva One', cursive;
+font-family: 'Sriracha', cursive;
+
+*/
+* { /*reset, all the selectors!*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*borders go on the inside, instead of outside*/
+}
+.myclear { /* every time i use this class....*/
+  clear: both; /*force the next element not to float*/
+}
+body {
+  background-color: #F3559A;
+  font-family: 'Yeseva One', cursive;
+}
+/*header styles*/
+header {
+  height: 100px; /*fixed height*/
+  background-image: url("../desimini_final/images/header_2400.jpg"); /* bg for large screens */
+  background-position: center center; /*if too big center it*/
+  background-size: cover; /*if too small- stretch it*/
+  padding: 15px; /*content can only get 15px close to the edges*/
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+header h1 { /* h1s but only when in the header*/
+  color: #E9B2F8;
+  font-size: 30px;
+  line-height: 1.0;
+  font-family: 'Sriracha', cursive;
+}
+header h2 { /* h2s but only when in the header*/
+  color: #E9B2F8;
+  font-size: 20px;font-family: 'Sriracha', cursive;
+  line-height: 1.0;
+}
+#menu_icon {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 1s;
+  width: 40px;
+  font-family: 'Sriracha', cursive;
+  height: 40px;
+}
+#main_nav {
+  position: fixed;
+  top: -200px;
+  right: 0 !important;
+  z-index: 999;
+  transition: all 1s;
+  width: 120px;
+}
+#main_nav ul {
+  list-style-type: none;
+  /*dont show the bullets*/
+}
+#main_nav ul li { /*li inside ul inside my main nav*/
+  width: 120px;
+  display: block;
+}
+#main_nav ul li a { /*links inside li in ul in #main_nav*/
+  text-align: center; /*text in the center*/
+  padding: 10px; /*around the text*/
+  font-size: 20px;
+  line-height: 1.0;
+  border-bottom: 1px solid #F3559A;
+border-left: 1px solid #F3559A;
+  display: block; /*behave like a box*/
+  text-decoration: none; /*lose the underline*/
+  color: #F3559A; /*text color*/
+  background-color: #E9B2F8;
+  height: 50px;
+  transition: all 0.5s; /* if any of this changes, animate in 0.5 s dont jump*/
+}
+/*Content styles***********************************************/
+main { 
+  width: 100vw; /*vw is % of viewport width, be as wide as the window*/
+  max-width: 1200px; /*but...only up to 1200px*/
+  background-color: #E9B2F8;
+  min-height: 100vh; /*be at least as tall as the viewport*/
+  margin: 0 auto; /*0 on top and bottom, split the diff on left and right*/
+  /*box-shadow: 0px 0px 15px 5px #999;*/
+  /*x y blur width  color*/
+  padding: 165px 15px 60px 15px;
+  /*top right bottom left*/
+}
+main h1 {
+  color: #F3559A;
+  font-size: 34px;
+  padding-bottom: 15px;
+  font-family: 'Sriracha', cursive;
+}
+main h2 {
+  color: #F3559A;
+  font-size: 26px;
+  padding-bottom: 15px;
+  line-height: 1.0;
+  font-family: 'Sriracha', cursive;
+  font-variant: small-caps;
+}
+main p {
+  color: #F3559A;
+  font-size: 16px;
+  padding-bottom: 15px;
+  font-weight: 300;
+}
+main p.myemph {
+  font-size: 26px;
+  font-weight: 100;
+  color: #F3559A;
+}
+main a {
+  color: #F3559A;
+}
+/*image styles*/
+img.left_img {
+  display: block;
+  max-width: 40%;
+  float: left;
+  border: 3px solid #F3559A;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px #F3559A;
+  margin: 0px 15px 15px 0; /*top right bottom left*/
+}
+img.right_img {
+  display: block;
+  max-width: 40%;
+  float: right;
+  border: 3px solid #F3559A;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 5px #F3559A;
+  margin: 0px 0px 15px 15px; /*top right bottom left*/
+}
+/*footer styles*************************/
+footer {
+  padding: 20px;
+  background-color: #F3559A;
+  text-align: center;
+  position: fixed;
+  height: 60px;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
+footer p {
+  color: #E9B2F8;
+  font-family: 'Sriracha', cursive;
+  font-size: 12px;
+  font-weight: 400;
+}

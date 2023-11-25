@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>intro to Javascript2</title>
+</head>
+
+<body>
+	<input id="first" value="0">
+	<input id="second" value="0">
+	<input id="third" value="0">
+	<p id="result">0</p>
+	<button onclick="calculate()">click me</button>
+
+</body>
+</html>
+<script>
+function calculate(){
+	var getfirst= document.getElementById("first").value;
+	//alert(getfirst);
+		var getsecond= document.getElementById("second").value;
+	//alert(getfirst);
+		var getthird= document.getElementById("third").value;
+	//alert(getfirst);
+	var sum=parseInt(getfirst)+parseInt(getsecond)+parseInt(getthird);
+	if (isNaN(sum)){
+		alert("please numbers!");
+	}else{
+	document.getElementById("result").innerHTML=sum;	
+	}
+
+}
+</script>

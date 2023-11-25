@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab 5 Form</title>
+<style>
+/*styles just for this form, so they can leave them embedded*/
+		
+form {
+    font-family: "Trebuchet MS", Verdana, "sans-serif";
+    padding: 10x;
+    margin: 10x;
+}
+label {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #4DBAFF;
+    border-radius: 20px 0 0 20px;
+}
+input, textarea, select, .radiogroup {
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+    margin: 5px;
+    font-size: 17px;
+    padding: 12px;
+}
+input[type=checkbox], input[type=color] {
+    width: 40px;
+}
+input[type=radio] {
+    width: 30px;
+}
+input[type=image] {
+    width: 180px;
+    transition: all 0.5s;
+}
+input[type=image]:hover {
+    transform: scale(1.2);
+}
+input:focus, texarea:focus {
+    background-color: #4DBAFF;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+</style>
+</head>
+
+<body>
+<form autocomplete="on"  action="http://benezzer.com/process.php" name="myForm" method="get" target="_blank">
+  <h1>Lab 5 Form</h1>
+  <label>What is your favorite sport:</label>
+  <select name="sport">
+    <option value="Football">Football</option>
+    <option  selected value="Basketball">Basketball</option>
+    <option value="Other">Other</option>
+  </select>
+  <br>
+  <label>Name of your high school</label>
+  <input autofocus type="text" name="school"  size="23" maxlength="23" required>
+  <br>
+  <label>Tell us about yourself:</label>
+  <textarea name="tellus" rows="5" cols="40" placeholder="a little bit about me" ></textarea>
+  <br>
+  <label>Favorite soft drink:</label>
+  <span class="radiogroup">
+  <input type="radio" name="drink" value="Coke">
+  Coke <br>
+  <input type="radio" name="drink" value="Pepsi">
+  Pepsi <br>
+  <input type="radio" name="drink" value="other">
+  Other <br>
+  </span> <br>	
+  <label>Want to be added to out mailing list?</label>
+  <input type="checkbox" name="mailadd" value="yes">
+  <br>
+  <input type="image" src="images/submit-button.jpg" alt="submit image">
+  <!--<button type="submit">Submit Form</button>-->
+</form>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Contact Us - LD Nail Spa</title><!--CHANGE TO TOPIC/PAGE ON ALL PAGES!!-->
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<style>
+/*styles just for this form, so they can leave them embedded*/
+		
+form {
+    font-family: 'Sriracha', cursive;
+    padding: 10x;
+    margin: 10x;
+}
+label {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #F3559A;
+    border-radius: 25px 0 0 25px;
+}
+input, textarea, select, {
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+    margin: 5px;
+    font-size: 17px;
+    padding: 12px;
+}
+input[type=checkbox], input[type=color] {
+    width: 40px;
+}
+input[type=radio] {
+    width: 30px;
+}
+input[type=image] {
+    width: 180px;
+    transition: all 0.5s;
+}
+input[type=image]:hover {
+    transform: scale(1.1);
+}
+input:focus, texarea:focus {
+    background-color: #fff;
+}
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+</style>
+
+</head>
+
+<body>
+
+ <header>
+  <h1>LD Nail Spa</h1><!--CHANGE ON ALL PAGES!!-->
+  <h2>Best Nail Designs In Broward County!</h2><!--CHANGE ON ALL PAGES!!-->
+	<img id="menu_icon" src="images/menu_icon.png" onclick="show_hide()" alt="menu icon" >
+  <!--site identity-->
+	</header>
+  <nav id ="main_nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    <li><a href="second.html">Products</a></li>
+    <li><a href="third.html">Menu</a></li>
+    <li><a href="fourth.html">Gallery</a></li>
+	  <li><a href="fifth.html">Contact Us</a></li>
+    </ul>
+	  <div class="myclear"></div>
+  </nav>
+  <main> 
+  <!--this is the main area of content-->
+  <h1>Contact Us Today</h1>
+  <!--page heading-->
+  <form autocomplete="on"  action="http://benezzer.com/process.php" name="myForm" method="get" target="_blank">
+  <h2>Book an Appointment</h2>
+  <label>Name:</label>
+  <input autofocus type="text" name="name"  size="23" maxlength="23" required>
+  <br>
+  <label>Last Name:</label>
+  <input autofocus type="text" name="lastname"  size="23" maxlength="32" required>
+  <br>
+  <label>Email:</label>
+  <input autofocus type="text" name="email"  size="23" maxlength="32" required>
+  <br>
+  <label>What services would you like:</label>
+  <textarea autofocus type="text" name="tellus" rows="6" cols="40" placeholder="Service/Date/Time?" ></textarea>
+  <br>	
+  <label>Payment method preference:</label>
+  <select name="Payment method preference:">
+    <option selected value="Cash">Cash</option>
+    <option value="Credit">Credit</option>
+	<option value="Paypal">Paypal</option>
+    <option value="Other">Other</option>
+  </select>
+  <br>
+  <label>Follow us on Social Media?</label>
+  <input type="checkbox" name="mailadd" value="yes">
+  <br>
+  <input type="image" src="../desimini_final/images/submit_button_900.jpg" alt="submit image">
+  <!--<button type="submit">Submit Form</button>-->
+</form>
+      
+    <div class="myclear"></div>
+  
+</main>
+<!--end of main-->
+
+  <footer>
+    <p>Copyright 2022&copy;</p>
+	  <p>Created By Riccardo Desimini</p>
+  </footer>
+
+</body>
+</html>
+<script src="js/menu_drop.js"></script>

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+*{/*reset, all the selectors! override, equalize all browser defauts*/
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+	
+}
+
+.myFixed {
+    position: fixed;
+    	
+}
+
+div#div1 {
+    width: 100px;
+    height: 100px;
+    background-color: #800;
+    font-size: 15px;
+    color: #EFFF00;
+	top: 0;
+	left: 0;
+	
+}
+
+div#div2 {
+    width: 100px;
+    height: 100px;
+    background-color: #800;
+    font-size: 15px;
+    color: #EFFF00;
+	top: 0;
+	right: 0;
+	
+}
+
+div#div3 {
+    width: 100px;
+    height: 100px;
+    background-color: #800;
+    font-size: 15px;
+    color: #EFFF00;
+	bottom: 0;
+	left: 0;
+	
+}
+
+div#div4 {
+    width: 100px;
+    height: 100px;
+    background-color: #800;
+    font-size: 15px;
+    color: #EFFF00;
+	bottom: 0;
+	right: 0;
+	
+}
